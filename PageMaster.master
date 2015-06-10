@@ -38,7 +38,7 @@
                         <a class="page-scroll" href="../Inscription.aspx">Inscription</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Connexion</a>
+                        <a class="page-scroll" href="../Connexion.aspx">Connexion</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#portfolio">Videos</a>

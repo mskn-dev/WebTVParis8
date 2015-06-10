@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/PageMaster.master" AutoEventWireup="false" CodeFile="Inscription.aspx.vb" Inherits="Inscription" %>
+﻿<%@ Page Title="Inscription" Language="VB" MasterPageFile="~/PageMaster.master" AutoEventWireup="false" CodeFile="Inscription.aspx.vb" Inherits="Inscription" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
