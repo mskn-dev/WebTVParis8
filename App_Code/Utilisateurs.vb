@@ -9,7 +9,7 @@ Public Class Utilisateurs
     Public Property Prenom As String
     Public Property Email As String
     Public Property Password As String
-    Public Property IdRole As Integer
+    Public Property IdRole As Integer = 2
 
     Public Sub New()
 
@@ -36,9 +36,9 @@ Public Class Utilisateurs
         sql.Connection.Open()
         Dim reader As SqlDataReader = sql.ExecuteReader
         If reader.Read Then
-            Me.IdUser = reader("ID_USER")
+            Me.IdUser = IIf(reader("ID_USER") IsNot DBNull.Value, reader("ID_USER"), 0)
         End If
-        If Me.IdUser <> Nothing Then
+        If Me.IdUser <> 0 Then
             Return True
         Else
             Return False
